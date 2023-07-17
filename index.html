@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test-Js</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-item-header">
+        <h1 class="title-header">مدیریت محصولات</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container-checkbox-insearch">
+        <input class="input-search" type="search" placeholder="جست و جو..." />
+        <label>
+          <input class="input-chackbox" type="checkbox" />
+          <span>محصولات موجود</span>
+        </label>
+      </div>
+      <select id="sort">
+        <option value="byCreated">مرتب سازی براساس تاریخ ساختن</option>
+        <option value="byEdited">مرتب سازی براساس تاریخ ویرایش</option>
+      </select>
+      <form class="form-add-products">
+        <input
+          class="title-product"
+          name="titleProduct"
+          type="text"
+          placeholder="عنوان محصول..."
+        />
+        <input
+          class="price-product"
+          name="priceProduct"
+          type="text"
+          placeholder="قیمت محصول..."
+        />
+        <button class="btn-add-product">افزودن</button>
+      </form>
+      <div id="showProduct"></div>
+    </main>
+    <!-- <script src="./functions.js"></script> -->
+    <script src="./uuid.js"></script>
+    <script src="/moment.js"></script>
+    <script src="/jalali-moment.js"></script>
+    <script src="/functions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

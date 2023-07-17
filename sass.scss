@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "font-vazir";
+  src: url("./fonts/Vazirmatn-UI-FD-Light.woff2");
+}
+body {
+  font-family: "font-vazir";
+  direction: rtl;
+}
+header {
+  background: #77018b;
+  height: 70px;
+}
+.container-item-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 200px;
+  .title-header {
+    color: #fff;
+    font-size: 25px;
+  }
+}
+.container-checkbox-insearch {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  .input-search {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    font: inherit;
+    border: 2px solid #817f7f;
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .input-chackbox {
+    padding: 0;
+    margin: 0 20px 0 5px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  span {
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+select {
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+  border: 1px solid #817f7f;
+  margin-top: 20px;
+  margin-right: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+.form-add-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 45px;
+  .title-product {
+    height: 35px;
+    width: 200px;
+    font: inherit;
+    border: 2px solid #ae90ab;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 10px;
+    outline: none;
+  }
+  .price-product {
+    height: 35px;
+    width: 200px;
+    font: inherit;
+    border: 2px solid #ae90ab;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    outline: none;
+  }
+  .btn-add-product {
+    font: inherit;
+    border-radius: 10px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: #77018b;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  input:focus {
+    border: 2px solid #a2719b;
+  }
+}
+.product-division {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 40px 0;
+  background: #fff;
+  box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.08);
+}
+.product-name {
+  color: #77018b;
+  font-weight: 600;
+  padding: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-name:hover {
+  color: #aa71b5;
+  transition: all 0.3s;
+}
+.product-price {
+  margin: 0 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 18px;
+}
+.remove-product-btn {
+  outline: none;
+  font: inherit;
+  color: #77018b;
+  background-color: #dba8d5;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.remove-product-btn:hover {
+  background-color: #cb43bb;
+  color: #fff;
+  transition: all 0.5s;
+}
+.container-main-page {
+  margin: 0 auto;
+  width: 120px;
+  margin-top: 40px;
+  .main-page {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #77018b;
+  }
+  .main-page:hover {
+    color: #a2719b;
+    transition: all 0.3s;
+  }
+}
+.container-input-edit-page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  input {
+    margin-left: 10px;
+    height: 35px;
+    width: 200px;
+    font: inherit;
+    border: 1.5px solid #ae90ab;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 10px;
+    outline: none;
+  }
+  input:focus {
+    border: 2px solid #a2719b;
+  }
+}
+.last-edit {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #545454;
+}
+.btn-remove-edit-page {
+  outline: none;
+  font: inherit;
+  color: #77018b;
+  background-color: #dba8d5;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-right: 50%;
+  transform: translateX(50%);
+  font-weight: bold;
+  margin-top: 30px;
+}
+.btn-remove-edit-page:hover {
+  background-color: #cb43bb;
+  color: #fff;
+  transition: all 0.5s;
+}
